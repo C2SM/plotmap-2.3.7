@@ -1,0 +1,186 @@
+version 2.3.8 2013-08-23
+
+       Minor Update
+       New function map.center() to determine the center location of a grid
+       in a target coordinate system. Used for better default settins of
+       orientation parameter.
+       Improvement of R-3 compatibility in rainbow9 and rainbow10.
+       (Chrigel Frei)
+
+version 2.3.7 2013-05-08
+
+       Minor Update
+       Made amendments to plot.legend() and filled.contour.map() in 
+       rep(NULL, ..) statement that produces a warning under R-3.0
+       Introduced at.dem.rda in data - a DEM for Austria made by Johann Hiebl.
+       Introduced new function plot.austria.map().
+       (Chrigel Frei)
+
+version 2.3.6 2013-04-22
+
+       Minor Update
+       Introduced non-restrictive NAMESPACE file for working with R-3.0  
+       (Chrigel Frei)
+
+version 2.3.5 2012-03-06
+
+       Update
+       New world nations boundaries in dataset world.nations.
+       Additions to add.map.outlines() to plot the new world
+       borders as default.
+       Further enlarging clip window in swiss.clip()
+       (Chrigel Frei)
+
+version 2.3.4 2012-02-17
+
+       Minor update
+       Changed default setting for na.col to grey.
+       Amended man-page of plot.alps.map
+       Changed swiss.clip() to fully cover the outside with white.
+       Changed default settings of plot.alps.map()
+       (Chrigel Frei)
+
+version 2.3.3 2011-07-06
+
+       Bug fix and update
+       Re-arranged columns in dataset swiss.rain, to work properly with
+       plot.points.map.
+
+       Extended options for line width and color in add.map.outlines()
+       Corresponding changes to plot.swiss.map() and plot.alps.map()
+       Changed default settings for lonlim, latlim, box in plot.alps.map()
+       Added thin.map2 argument in add.map.outlines() to allow separate
+       thinning for national borders and rivers/lakes. Corresponding
+       changes to plot.swiss.map() and plot.alps.map().
+       (Chrigel Frei)
+
+version 2.3.2 2010-11-18
+
+       New rivers data set alps.rivers for the Alps. 
+       (Francesco Isotta)
+
+version 2.3.1 2010-10-26
+
+       New functions and datasets to plot on Alpine perimeter. 
+       New function: plot.alps.map(), modified function: add.map.outlines().
+       New datasets: alps.borders, alps.lakes, alps.rivers, expl9, expl10 
+       (Francesco Isotta)
+
+version 2.2.1 2010-08-11
+
+       Added algorithm "crossings" in in.polygon.pm, which improves 
+       performance of plotting filled contours. 
+       (Christoph Frei)
+
+version 2.1.4 2010-06-25
+
+       Rebuild for R-2.11.1
+       (Christoph Frei)
+
+version 2.1.3 2010-01-05
+
+       Improved color table prism.colors().
+       (Christoph Frei)
+
+version 2.1.2 2009-11-24
+
+       New color table prism.colors().
+       (Christoph Frei)
+
+version 2.1.1 2009-10-06
+
+       Corrections to help pages.
+       (Christoph Frei)
+
+version 2.1.0 2009-09-09
+
+       Additions/modifications for plotting grids/points/polygons 
+       in any geographical coordinate system supported by the geocors
+       package. 
+       One of the consequences of this is that plot.map necessarily 
+       requires that an attribute named "grid.type" is associated
+       with the input field, and that attributes specifying the 
+       coordinates are given too. 
+       These modifications also resulted in a better modularisation
+       of the code. Some performance problems remain and need to be 
+       resolved at a later stage.
+       (Christoph Frei)
+
+       Introduced ptype="plain" to draw a plain map. This replaces
+       previous internal procedures where a dummy field was generated
+       when fld was NULL or missing.
+       (Christoph Frei)
+
+       Bug-fix in plot.legend. Shadings are properly added in the
+       legend now.
+       (Christoph Frei)
+
+       Bug-fix for plotting map outlines in a global window.
+       (Christoph Frei)
+
+version 1.2.6 2008-08-18
+
+       Introduced new parameters mar.leg and mar.plot in function
+       plot.map().
+       (Christoph Frei)
+
+version 1.2.5 2008-08-15
+
+       Fixed help page for lonlat2rot. polphi/pollam are lat/lon
+       respectively.
+       (Christoph Frei)
+
+version 1.2.4 2008-08-15
+
+       Bug-fix in plot.points.map color selector for treatment of 
+       missing data.
+       (Christoph Frei)
+
+version 1.2.3 2008-03-19
+
+       Bug in treatment for missing breaks amended in plot.points.map() 
+       and plot.poly.map() and plot.map().
+       (Christoph Frei)
+
+version 1.2.2 2008-03-17
+
+       Allow for automatic setting of breaks in plot.points.map() and 
+       plot.poly.map(). Newly introduced parameter nbreaks.
+       (Christoph Frei)
+
+version 1.2.1 2008-03-06
+
+       Additional examples in plot.points.map().
+       (Christoph Frei)
+
+version 1.2.0 2008-02-28
+
+       Modified calculation of field range in plot.map() to avoid 
+       warning message when entire field is NA. Warning always occurred
+       with plot.points.map() because of dummy field.
+       (Christoph Frei)
+
+       New function plot.poly.map() for plotting coloured polygons onto
+       a map.  
+       (Christoph Frei)
+
+       New function plot.points.map() for plotting point symbols or 
+       characters onto a map.  
+       (Christoph Frei)
+
+       Amended all calls to mapproject - only use list as input. Avoids 
+       warning message now occurring with newer versions of R. Changes
+       made to image.map(), contour.map(), filled.contour.map(), 
+       oplot.map.outlines(), clip.swiss()
+       (Christoph Frei)
+
+version 1.1.4 2007-10-18
+
+       Some recoding for plot.swiss.map() for more modularity, enabling
+       separate overplotting of borders, lakes etc. 
+       (Christoph Frei)
+
+version 1.1.2 2006-08-02
+
+       First version (Christoph Frei)
+

@@ -1,0 +1,27 @@
+# A convenience mirror for the R package `plotmap`
+
+## DESCRIPTION
+
+Package: plotmap   
+Version: 2.3.7    
+Date: 2013-08-23   
+Title: Image, contour and filled contour plots on a map.   
+Author: Christoph Frei and friends    
+Maintainer: Christoph Frei <christoph.frei@meteoswiss.ch>   
+Depends: R (>= 2.10), maps, mapproj, mapdata, geocors   
+Description: Functions to make an image plot (pixelled grids), a plot   
+     with contour lines or a filled contour plot on a map with    
+     arbitrary projection. Supported geographic coordinate systems   
+     are those for which transformations are implemented in package   
+     geocors. The package also encompasses functions to plot coloured   
+     symbols and color-filled polygons on a map.  
+License: GPL-2   
+Packaged: 2013-08-24 07:19:59 UTC; chrigel
+
+# INSTALL
+
+~~~R
+install.packages("devtools")
+library(devtools)
+install_github("C2SM/plotmap-2.3.7")
+~~~
